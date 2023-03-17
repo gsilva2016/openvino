@@ -63,7 +63,7 @@ bool SupportedElementTypes::is_constant_type_supported(ov::element::Type elem_ty
     if (supported_constant_types.count(elem_type) == 0) {
         if (is_exception_allowed) {
             THROW_GNA_EXCEPTION << "The plugin does not support constant precision with " << elem_type.get_type_name()
-                                << " format. Supported precisions " << supported_constant_types << "\n";
+                                << " format. Supported precisions " << "\n";
         }
         return false;
     }
