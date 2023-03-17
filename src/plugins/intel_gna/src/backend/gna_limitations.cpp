@@ -44,7 +44,7 @@ bool SupportedElementTypes::is_parameter_type_supported(ov::element::Type elem_t
     if (supported_parameter_types.count(elem_type) == 0) {
         if (is_exception_allowed) {
             THROW_GNA_EXCEPTION << "The plugin does not support input precision with " << elem_type.get_type_name()
-                                << " format. Supported precisions " << supported_parameter_types << "\n";
+                                << " format. Supported precisions " << "\n";
         }
         return false;
     }
