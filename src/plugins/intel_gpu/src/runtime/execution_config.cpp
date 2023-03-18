@@ -54,7 +54,7 @@ void ExecutionConfig::set_default() {
         // Legacy API properties
         std::make_tuple(ov::intel_gpu::enable_dynamic_batch, false),
         std::make_tuple(ov::intel_gpu::exclusive_async_requests, false),
-        std::make_tuple(ov::intel_gpu::nv12_two_inputs, false),
+        std::make_tuple(ov::intel_gpu::nv12_two_inputs, true),
         std::make_tuple(ov::intel_gpu::config_file, ""),
         std::make_tuple(ov::intel_gpu::enable_lp_transformations, false));
 
